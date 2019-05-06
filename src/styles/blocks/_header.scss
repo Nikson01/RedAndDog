@@ -1,0 +1,43 @@
+.header{
+
+  &_top{
+    background-color: $black;
+    color: $white;
+  }
+
+  &_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+  }
+
+  &_list{
+    display: flex;
+    margin: 0;
+  }
+
+  &_link{
+    font-size: 11px;
+    font-weight: 300;
+    color: $white;
+    transition: color 0.3s ease;
+
+    &:hover{
+      color: $red;
+      transition: color 0.3s ease;
+    }
+  }
+
+  &_items{
+    margin: 0 12px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+} 
