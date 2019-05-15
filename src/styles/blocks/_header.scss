@@ -1,4 +1,5 @@
 .header{
+  position: relative;
 
   &_button{
     display: block;
@@ -43,22 +44,18 @@
 
       &:before{
         transform: rotate(45deg);
-        margin-top: 5px;
+        top: 9px;
         transition: margin-top .3s  ease, transform .3s ease;
       }
 
       &:after{
         transform: rotate(-45deg);
-        margin-top: -3px;
+        bottom: 8px;
         transition: margin-top .3s  ease, transform .3s ease;
       }
 
-
-
     }
     
-
-
     span{
       height: 2px;
       display: block;
@@ -71,6 +68,9 @@
   &_top{
     background-color: $black;
     color: $white;
+    
+
+    
   }
 
   &_nav{
@@ -83,6 +83,7 @@
   &_list{
     display: flex;
     margin: 0;
+    align-items: center;
   }
 
   &_content{
@@ -114,22 +115,36 @@
 
   .menu{
     display: none;
+    position: absolute;
+    z-index: 3;
+    top: 65px;
+    border-top: 1px solid #e9e9e9;
+    right: 0;
+    left: 0;
+    background-color: $white;
 
     @media(min-width: $desktop) {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: static;
+      border: none;
     }
 
-    
-
-    
+  
 
     &-link{
       font-size: 14px;
       text-transform: uppercase;
-      padding: 0 13px;
+      padding: 10px 13px;
       font-weight: 500;
+      display: block;
+      border-bottom: 1px solid #e9e9e9;
+
+      @media(min-width: $desktop) {
+        border: none;
+        padding: 0px 13px;
+      }
     }
   }
 
@@ -144,20 +159,32 @@
       transition: color 0.3s ease;
     }
   }
+  
+  .sing_in{
+    display: block;
+
+    a{
+      text-decoration: underline;
+    }
+  }
 
   &_items{
     margin: 0 12px;
+    display: none;
 
-    .sing_in{
-      text-decoration: underline;
-    }
+    
 
     &:first-child{
       margin-left: 0;
+      display: block;
     }
 
     &:last-child{
       margin-right: 0;
+    }
+
+    @media(min-width: $desktop) {
+      display: block;
     }
   }
 
