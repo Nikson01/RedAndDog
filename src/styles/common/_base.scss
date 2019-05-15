@@ -4,12 +4,38 @@ body{
 
   a{
     text-decoration: none;
+    color: $black;
+    transition: color 0.3s ease;
+    cursor: pointer;
+
+    &:hover{
+      color: #ff4242;
+      transition: color 0.3s ease;
+    }
   }
+}
+
+body.shadow{
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: 2;
+      background-color: rgba(0,0,0, .1);
+      width: 100%;
+      top: 80px;
+      bottom: 0;
+    }
 }
 
 ul{
   list-style: none;
   padding: 0;
+}
+
+button{
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .wrapper {
