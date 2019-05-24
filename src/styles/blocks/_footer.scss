@@ -1,0 +1,84 @@
+.footer{
+  background-color: $grey;
+  padding: 20px 0 10px 0;
+
+  p{
+    text-align: center;
+
+    @media(min-width: $desktop) {
+      text-align: inherit;
+    }
+  }
+
+  &-logo{
+    width: 200px;
+    margin: 0 auto;
+  }
+  &-link{
+    display: block;
+    margin: 10px 0;
+  }
+  &-list{
+    text-align: center;
+
+    @media(min-width: $desktop) {
+      text-align: inherit;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &-nav{
+    margin: 0;
+  }
+
+  &-type{
+    &-input{
+      display: flex;
+  
+      input[type="text"]{
+        height: 38px;
+        border: 1px solid $black;
+        padding: 0 15px;
+        width: 80%;
+      }
+      button{
+        background-color: $black;
+        color: $white;
+        width: 20%;
+        cursor: pointer;
+      }
+    }
+  }
+  &-list{
+    i{
+      background-image: url('../images/social.png');
+      width: 30px;
+      height: 30px;
+      display: block;
+      
+    }
+    #yt{
+      background-position: -1px -5px;
+    }
+    #tw{
+      background-position: -32px -6px;
+    }
+    #fb{
+      background-position: -65px -5px;
+      width: 20px;
+    }
+    #inst{
+      background-position: 32px -5px;
+    }
+  }
+  &-social{
+    a{
+      margin: 5px 0;
+    }
+
+    ul.footer-list{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
