@@ -75,12 +75,16 @@
     &--2-3 {
       width: calc(100% - (100% / 3));
     }
+    &--1-4{ 
+        width: calc(100% / 4);
+      }
+    
 
     &-tab {
 
       &--1-2 {
         
-        @media(min-width: $tablet) {
+        @media screen and (min-width: $tablet) and (max-width: 1023px) {
           width: 50%;
         }
       }
@@ -121,6 +125,27 @@
           width: calc(100% - (100% / 3));
         }
       }
+
+      &--1-4{
+        
+        @media(min-width: $desktop) {
+          width: calc(100% / 4);
+        }        
+      }
+
+      &--1-5{
+
+        @media(min-width: $desktop) {
+          width: calc(100% / 5);
+        }
+      }
+
+      &--4-5{
+
+        @media(min-width: $desktop) {
+          width: calc(100% - (100% / 5));
+        }
+      }
     }
   }
 }
@@ -131,6 +156,7 @@
   
   @media(min-width: $desktop) {
     max-width: calc(100% - (100% / 3));
+    
   }
 
   @media(min-width: $tablet) {
