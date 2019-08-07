@@ -8,7 +8,7 @@
     .nav__links-slash{
         cursor: default;
     }
-    .nav__links-last{
+    .nav__links-women{
         cursor: default;
     }
 }
@@ -41,8 +41,10 @@
         }
     }
     &_content{
+        
         .catalog_content-products{
-            border-bottom: 1px solid #eaeaea;        
+            border-bottom: 1px solid #eaeaea;
+
         .catalog_content_right{
             display: flex;
             border-bottom: 1px solid #eaeaea;
